@@ -1,0 +1,158 @@
+# Kotori.ai - Git Ignore File for Streamlit App
+# ==============================================
+
+# Environment Variables & Secrets
+# ================================
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# API Keys and Tokens
+api_keys.txt
+secrets.json
+tokens.txt
+
+# Python
+# =======
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+# ====================
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+kotori_env/
+go/
+
+# IDE & Editor Files
+# ==================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks
+# ==================
+.ipynb_checkpoints
+*.ipynb
+
+# Logs & Debug Files
+# ==================
+*.log
+logs/
+debug.log
+error.log
+streamlit.log
+
+# Temporary Files
+# ===============
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+
+# Model Files & Checkpoints
+# =========================
+models/
+checkpoints/
+*.pkl
+*.pickle
+*.joblib
+*.model
+
+# Streamlit Specific
+# ==================
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Testing & Coverage
+# ==================
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Documentation Build
+# ===================
+docs/_build/
+site/
+
+# OS Generated Files
+# ==================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup Files
+# ============
+*.bak
+*.backup
+*~
+*.orig
+
+# Deployment Files
+# ================
+.vercel
+.netlify
+.firebase/
+.gcloudignore
+
+# User Specific
+# =============
+user_data/
+personal/
+private/
+config_local.py
+
+# Large Files
+# ===========
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Memory & Session Files
+# ======================
+memory/
+sessions/
+user_sessions/
+chat_history/
