@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    @apply text-gray-800;
+  }
+  
+  body {
+    @apply bg-gray-50 font-sans;
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-primary-800 mb-6;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold text-primary-700 mb-5;
+  }
+
+  h3 {
+    @apply text-2xl font-medium text-primary-600 mb-4;
+  }
+
+  p {
+    @apply text-base leading-relaxed mb-4;
+  }
+
+  a {
+    @apply text-primary-600 hover:text-primary-800 transition-colors;
+  }
+
+  button {
+    @apply transition-all duration-200;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-lg font-medium rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-primary-700 border-primary-200 hover:bg-gray-50 focus:ring-primary-500;
+  }
+
+  .btn-accent {
+    @apply btn bg-accent-500 text-white hover:bg-accent-600 focus:ring-accent-400;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-soft p-6 transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-medium;
+  }
+
+  .input {
+    @apply block w-full px-4 py-3 text-lg border-gray-300 rounded-xl shadow-sm focus:ring-primary-500 focus:border-primary-500;
+  }
+
+  .label {
+    @apply block text-lg font-medium text-gray-700 mb-2;
+  }
+
+  .chat-bubble {
+    @apply p-4 rounded-2xl max-w-3xl mb-4;
+  }
+
+  .chat-bubble-user {
+    @apply chat-bubble bg-primary-100 text-primary-900 ml-auto;
+  }
+
+  .chat-bubble-bot {
+    @apply chat-bubble bg-white border border-gray-200 text-gray-800;
+  }
+}
+
+/* Accessibility improvements */
+@layer utilities {
+  .focus-visible-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2;
+  }
+
+  .high-contrast-text {
+    @apply text-gray-900;
+  }
+
+  .readable-line-height {
+    @apply leading-relaxed;
+  }
+}
