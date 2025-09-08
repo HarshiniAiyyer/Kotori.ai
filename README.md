@@ -1,4 +1,4 @@
-# Kotori.ai - Empty Nest Syndrome Support Assistant
+# Kotori.ai - Your Companion for Empty Nest Syndrome
 
 Kotori.ai is your companion designed to support parents experiencing Empty Nest Syndrome. It provides information, emotional support, and practical suggestions to help navigate this significant life transition.
 
@@ -54,48 +54,48 @@ The production-ready files will be available in the `frontend/build` directory.
 
 Here is a summary of the literature used for the RAG (Retrieval-Augmented Generation) system, categorized by article type:
 
-1.  **1-Empty-Nest-PDF.pdf**
-    *Type:* Magazine article (narrative feature)
+1.  **1-Empty-Nest-PDF.pdf** \
+    *Type:* Magazine article (narrative feature) \
     *Summary:* A personal essay exploring the emotional impact of children leaving home, highlighting parental grief, identity loss, and the transition to a new life phase. It includes expert insights and cultural commentary.
 
-2.  **2-.pdf**
-    *Type:* Research paper (academic study)
+2.  **2-.pdf** \ 
+    *Type:* Research paper (academic study) \
     *Summary:* Examines the relationship between empty nest syndrome and life satisfaction among Indian middle-aged adults. Finds significant gender differences in ENS and a negative correlation with life satisfaction.
 
-3.  **3-.pdf**
-    *Type:* Research paper (peer-reviewed journal article)
+3.  **3-.pdf** \
+    *Type:* Research paper (peer-reviewed journal article) \
     *Summary:* A mixed-methods study exploring parental gender and cultural differences in empty nest syndrome among four ethnic groups in Canada. Finds that Indo/East Indian parents report higher levels of ENS.
 
-4.  **4-mtnest-indian form.pdf**
-    *Type:* Research paper (scale development and validation)
+4.  **4-mtnest-indian form.pdf** \
+    *Type:* Research paper (scale development and validation) \
     *Summary:* Describes the development and validation of the Empty Nest Syndrome Scale—Indian Form (ENS-IF), a tool to measure ENS among Indian parents, including psychometric properties and cultural relevance.
 
-5.  **5-Review_Article_2.pdf**
+5.  **5-Review_Article_2.pdf** \
     *Type:* Review article (critical clinical review)
     *Summary:* Critically evaluates empty nest syndrome from clinical, cultural, and gender perspectives. Discusses its validity, neurobiological factors, and relevance in the digital age.
 
-6.  **6-www-cadabamshospitals-com-empty-nest-syndrome-helpful-tips-to-overcome-.pdf**
-    *Type:* Internet article (health advice blog)
+6.  **6-www-cadabamshospitals-com-empty-nest-syndrome-helpful-tips-to-overcome-.pdf** \
+    *Type:* Internet article (health advice blog) \
     *Summary:* Offers practical advice on coping with empty nest syndrome, including stages, symptoms, and self-help strategies. Promotes professional support and highlights benefits of the empty nest phase.
 
-7.  **7-www.cbetterhealth.vic.gov.pdf**
-    *Type:* Government health fact sheet
+7.  **7-www.cbetterhealth.vic.gov.pdf** \
+    *Type:* Government health fact sheet \
     *Summary:* Provides an overview of empty nest syndrome, its emotional impact, coping strategies, and planning advice. Targets parents, especially mothers, and includes resource links.
 
-8.  **8-.pdf**
-    *Type:* University web article (promotional educational content)
+8.  **8-.pdf** \
+    *Type:* University web article (promotional educational content) \
     *Summary:* Promotes a course on thriving during the empty nest phase. Emphasizes reframing the experience as an opportunity for growth, resilience, and personal development.
 
-9.  **9-health_clevelandclinic.pdf**
-    *Type:* Health clinic article (expert advice)
+9.  **9-health_clevelandclinic.pdf** \
+    *Type:* Health clinic article (expert advice) \
     *Summary:* A psychologist shares 10 tips for coping with empty nest syndrome, including communication, self-care, and knowing when to seek help. Includes causes, symptoms, and reassurance.
 
-10. **10-www_unitegroup.pdf**
-    *Type:* Corporate blog post (research highlight)
+10. **10-www_unitegroup.pdf** \ 
+    *Type:* Corporate blog post (research highlight) \
     *Summary:* Shares survey findings on parental emotions when children leave for university. Discusses the impact of ENS and the role of higher education institutions in supporting parents.
 
-11. **11-merthyrtydfil_fosterwales.gov.pdf**
-    *Type:* Government blog post (promotional storytelling)
+11. **11-merthyrtydfil_fosterwales.gov.pdf** \
+    *Type:* Government blog post (promotional storytelling) \
     *Summary:* Uses personal fostering stories to address empty nest syndrome. Encourages fostering as a way to fill the emotional void and contribute to the community.
 
 ### 🧠 Backend Components
@@ -142,5 +142,6 @@ Refer to `deploy-checklist.md` for detailed deployment instructions for both bac
 This project is proprietary and confidential. Unauthorized copying, distribution, or use is strictly prohibited.
 
 ## 🙏 Acknowledgments
+
 
 - Built with LangGraph, Groq, and Hugging Face technologies.
