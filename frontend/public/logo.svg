@@ -1,0 +1,13 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="60" fill="#E0EFFE"/>
+  
+  <!-- Stylized K -->
+  <path d="M35 30V90M35 60H50L70 30M35 60H50L70 90" stroke="#0070C4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Dot for the i -->
+  <circle cx="85" cy="40" r="6" fill="#0070C4"/>
+  
+  <!-- Line for the i -->
+  <line x1="85" y1="50" x2="85" y2="90" stroke="#0070C4" stroke-width="8" stroke-linecap="round"/>
+</svg>

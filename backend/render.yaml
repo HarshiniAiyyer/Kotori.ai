@@ -1,0 +1,14 @@
+services:
+  - name: kotori-backend
+    type: web
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn api:app -w 4 -k uvicorn.workers.UvicornWorker
+    rootDir: backend
+    envVars:
+      - key: HUGGINGFACE_API_TOKEN
+      - key: GROQ_API_KEY
+      - key: CHROMA_DIR
+        value: "./chroma"
+      - key: DATA_DIR
+        value: "./data"
