@@ -1,6 +1,7 @@
 from langchain.schema import Document
 import hashlib
 from vectorstore_setup import get_vectorstore
+from kotori_graph import MAX_CHAT_HISTORY_LENGTH
 
 # Get the vectorstore instance
 vectorstore = get_vectorstore()
@@ -8,16 +9,24 @@ vectorstore = get_vectorstore()
 # ─────────────────────────────
 # 2. Save conversation to memory
 # ─────────────────────────────
-def save_memory(query: str, response: str, memory_type: str = "qna") -> None:
+def save_memory(query: str, response: str, memory_type: str = "qna", chat_history: List[str] = None) -> None:
     """
-    Saves a user-assistant interaction to Chroma vectorstore.
+    Saves a user-assistant interaction to Chroma vectorstore, truncating chat history if provided.
     """
+    if chat_history and len(chat_history) > MAX_CHAT_HISTORY_LENGTH:
+        # Keep only the most recent interactions
+        chat_history = chat_history[-MAX_CHAT_HISTORY_LENGTH:]
+
+    full_content = f"User: {query}\nAssistant: {response}"
+    if chat_history:
+        full_content = "\n".join(chat_history + [full_content])
+
     memory_doc = Document(
-        page_content=f"User: {query}\nAssistant: {response}",
+        page_content=full_content,
         metadata={
             "source": "chat_memory",
             "type": memory_type,
-            "id": f"conv_{hashlib.sha256(query.encode()).hexdigest()}"
+            "id": f"conv_{hashlib.sha256(full_content.encode()).hexdigest()}"
         }
     )
     try:
