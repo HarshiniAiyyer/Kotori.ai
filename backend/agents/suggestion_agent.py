@@ -241,7 +241,7 @@ def clean_text(text: str) -> str:
 def save_to_chroma(chunks: List[Document]):
     try:
         # Initialize Chroma
-        chroma = Chroma(persist_directory=str(CHROMA_DIR), embedding_function=get_embeddings())
+        chroma = get_vectorstore()
         
         # Assign IDs and clean text content
         chunks = assign_chunk_ids(chunks)
