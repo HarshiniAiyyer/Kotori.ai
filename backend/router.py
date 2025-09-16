@@ -12,7 +12,7 @@ from langchain_groq import ChatGroq
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from vectorstore_setup import get_embedding_model
 from langchain.schema.document import Document
 
 # Load API tokens
@@ -203,12 +203,8 @@ def load_environment() -> bool:
         return False
 
 # Embedding function
-def get_embeddings() -> HuggingFaceEmbeddings:
-    return HuggingFaceEmbeddings(
-        model_name="all-MiniLM-L6-v2",
-        model_kwargs={"device": "cpu"},
-        encode_kwargs={"normalize_embeddings": True}
-    )
+def get_embeddings():
+    return get_embedding_model()
 
 # Load PDFs
 def load_pdfs() -> List[Document]:
