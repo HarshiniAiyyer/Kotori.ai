@@ -22,7 +22,7 @@ def get_embedding_model():
     global _embedding_model
     if _embedding_model is None:
         _embedding_model = HuggingFaceEmbeddings(
-            model_name="all-MiniLM-L6-v2",
+            model_name="paraphrase-MiniLM-L3-v2",
             model_kwargs={"device": "cpu"},
             encode_kwargs={"normalize_embeddings": True}
         )
